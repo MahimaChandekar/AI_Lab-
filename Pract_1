@@ -1,0 +1,11 @@
+# Simple Reflex Agent - Smart Light System
+
+# Taking inputs from the user
+human_present = input("Is someone present in the room? (yes/no): ").lower()
+sunlight_available = input("Is sunlight available outside? (yes/no): ").lower()
+
+# Agent's decision
+if human_present == "yes" and sunlight_available == "no":
+    print("Light is ON")
+else:
+    print("Light is OFF")
