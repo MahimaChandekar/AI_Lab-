@@ -1,0 +1,14 @@
+rooms = {}
+
+for room in ["A", "B", "C"]:
+    status = input(f"Is Room {room} occupied? ")
+
+    if status.lower() == "yes":
+        rooms[room] = {"occupied": True, "light": "ON"}
+    else:
+        rooms[room] = {"occupied": False, "light": "OFF"}
+
+print("\nFinal Status")
+
+for room, status in rooms.items():
+    print(f"Room {room}: {status}")
